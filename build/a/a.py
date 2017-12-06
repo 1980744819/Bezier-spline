@@ -27,8 +27,8 @@ def calPositon(a, b, t):
             y = y0 - y * t
         return (x, y)
     else:
-        y = y0 + y * t
-        x = x0 + x * t
+        y = min(y0,y1) + y * t
+        x = min(x0,x1) + x * t
         return (x, y)
 
 
